@@ -1,0 +1,15 @@
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/team_1
+        username: postgres
+        password: postgres
+        hikari:
+         maximum-pool-size: 10
+    server:
+        port: 8080
+        servlet:
+            context_path: "/messanger"
+    jpa:
+        show-sql: true
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
